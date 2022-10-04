@@ -1,0 +1,27 @@
+/*	Global	*/
+
+@import "global/variables.scss";
+@import "global/global.scss";
+@import "global/fonts.scss";
+
+/* Pages */
+
+@import "blocks/page.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/user.scss";
+@import "blocks/advantages.scss";
+@import "blocks/slider.scss";
+@import "blocks/product-catalog.scss";
+@import "blocks/catalog.scss";
+@import "blocks/form.scss";
+@import "blocks/range.scss";
+@import "blocks/product-card.scss";
+@import "blocks/pagination.scss";
+@import "blocks/map.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/footer-socials";
+@import "blocks/footer-menu.scss";
+@import "blocks/footer-contacts.scss";
+@import "blocks/footer-media.scss";
+@import "blocks/footer-copyright";

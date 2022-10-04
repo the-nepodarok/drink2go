@@ -1,0 +1,47 @@
+.page-footer {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    padding: 40px 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    row-gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 34px;
+    padding-right: 40px;
+    padding-left: 40px;
+    row-gap: 28px;
+  }
+}
+
+.page-footer-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.page-footer__section {
+  padding: 20px;
+  border-bottom: 1px solid $base-secondary;
+  flex-shrink: 1;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border-bottom: none;
+  }
+}
+
+.page-footer h4 {
+  margin: 0 0 20px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+  color: $base-primary;
+}

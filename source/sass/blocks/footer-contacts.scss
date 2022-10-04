@@ -1,0 +1,44 @@
+.footer-contacts {
+  @media (min-width: $tablet-width) {
+    flex-basis: 31%;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 25%;
+    padding-top: 9px;
+  }
+}
+
+.footer-contacts__address {
+  position: relative;
+  margin: 0 0 15px;
+  padding-left: 19px;
+}
+
+.footer-contacts__phone {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 19px;
+  align-items: center;
+  font-size: 14px;
+  line-height: 20px;
+  color: $base-black;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    outline-color: $base-primary;
+    color: $primary-lighter;
+  }
+
+  &:active {
+    color: $primary-darker;
+  }
+}
+
+.footer-contacts__icon {
+  position: absolute;
+  left: 2px;
+  width: 13px;
+}

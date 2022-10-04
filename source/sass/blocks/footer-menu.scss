@@ -1,0 +1,39 @@
+.footer-menu {
+  padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+    margin-right: 107px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 9px;
+    padding-bottom: 0;
+    margin-right: 205px;
+  }
+}
+
+.footer-menu__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-menu__link {
+  text-decoration: none;
+  color: $base-black;
+
+  &:hover,
+  &:focus {
+    outline-color: $base-primary;
+    color: $primary-lighter;
+  }
+
+  &:active {
+    color: $primary-darker;
+  }
+}

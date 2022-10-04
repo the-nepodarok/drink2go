@@ -1,0 +1,155 @@
+.advantages {
+  padding: 50px 20px 60px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 30px 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 39px 120px;
+  }
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  row-gap: 90px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    column-gap: 30px;
+    row-gap: 30px;
+    justify-content: space-around;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+  }
+}
+
+.advantages__title {
+  margin: 0;
+  margin-bottom: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $base-primary;
+}
+
+.advantages__section-title {
+  margin: 0;
+  margin-bottom: 100px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: $base-black;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+    font-size: 42px;
+    line-height: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 80px;
+  }
+}
+
+.advantages__item {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    max-width: 267px;
+    padding-left: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 318px;
+    padding-top: 76px;
+    padding-left: 0;
+  }
+
+  &::before {
+    position: absolute;
+    top: -70px;
+    left: 7px;
+    right: 0;
+    margin: 0 auto;
+    content: "";
+    width: 52px;
+    height: 56px;
+    text-align: center;
+    background: transparent url("../img/advantages/clock.svg") no-repeat;
+
+    @media (min-width: $tablet-width) {
+      left: -285px;
+      top: 5px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 0;
+      top: 0;
+    }
+  }
+
+  &--convenient::before {
+    background-image: url("../img/advantages/pocket.svg");
+  }
+
+  &--energetic::before {
+    width: 42px;
+    background-image: url("../img/advantages/energy.svg");
+  }
+
+  &--ecological::before {
+    width: 46px;
+    background-image: url("../img/advantages/leaf.svg");
+  }
+}
+
+.advantages__item__description {
+  margin: 0;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
+}
+
+.advantages__item__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 8px;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
+}

@@ -1,0 +1,119 @@
+.catalog {
+  background-color: $lightest-grey;
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 76%;
+  }
+}
+
+.catalog__sort-form-wrapper {
+  display: flex;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  align-items: baseline;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+    margin-bottom: 30px;
+  }
+}
+
+.catalog__sorting-label {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 8px;
+}
+
+.catalog__sorting-select {
+  width: 165px;
+  border: none;
+  border-radius: 4px;
+  background-color: $lightest-grey;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: center;
+  color: $base-primary;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $base-secondary;
+  }
+
+  &:focus {
+    outline-color: $base-primary;
+  }
+}
+
+.catalog__sorting-select option {
+  background-color: $base-white;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $base-black;
+}
+
+.catalog__list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+    flex-direction: row;
+    column-gap: 30px;
+    row-gap: 30px;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 25px;
+    margin-bottom: 60px;
+    justify-content: flex-start;
+  }
+}
+
+.catalog__item {
+  display: flex;
+  min-height: 360px;
+  width: 240px;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: $base-white;
+
+  @media (min-width: $tablet-width) {
+    min-height: 250px;
+    width: 289px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 250px;
+    width: 256px;
+  }
+}
+
+.catalog__pagination {
+  position: relative;
+  display: flex;
+  margin: 0;
+  padding: 0 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 20px;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 147px;
+    margin-right: 124px;
+    justify-content: flex-end;
+    column-gap: 20px;
+  }
+}
